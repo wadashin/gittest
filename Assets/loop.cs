@@ -4,19 +4,21 @@ using UnityEngine;
 
 public class loop : MonoBehaviour
 {
-    //public int a;
+    public string b = "paipai no urami";
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        Debug.Log("paipai ga arawareta");
     }
 
     // Update is called once per frame
     void Update()
     {
-        for(int a = 0; a <= 100; a++)
+
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log(a);
+            Debug.Log(b + " harasade okubeki ka");
         }
     }
 }
